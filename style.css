@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo-navbar {
+    width: 120px;
+  height: auto;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #1e88e5;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #1e88e5;
+  margin: 0.5rem 0;
+font-weight: 600;
+}
+
+.buy-btn {
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #1da851;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+h3{
+    color: orangered;
+    font-size: 20px;
+}
+h4{
+    color: #1da851;
+    font-size: 20px;
+}
+h5{
+    color: blue;
+    font-size: 20px;
+}
