@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boutique Bourkini</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e88e5;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .logo-navbar {
+      width: 120px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      color: #1e88e5;
+      margin: 0.5rem 0;
+      font-weight: 600;
+    }
+
+    .buy-btn {
+      background-color: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background-color: #1da851;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    h3 { color: orangered; font-size: 20px; }
+    h4 { color: #1da851; font-size: 20px; }
+    h5 { color: blue; font-size: 20px; }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    .modal-content {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      max-width: 80%;
+    }
+
+    .modal-content img {
+      max-width: 200px;
+      border-radius: 10px;
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Matjar A&C</h1>
+    <p>مرحبا بكم زبناءنا الكرام مع احسن اتمنة و جودة</p>
+    <img src="ChatGPT Image 10 juin 2025, 03_01_12.png" alt="Logo" class="logo-navbar">
+  </header>
+
+  <section class="product-list">
+    <!-- Produit 1 -->
+    <div class="product">
+      <img src="burk or 1.JPG" alt="Bourkini 1" class="product-image" data-modal="modal1">
+      <h3>بوركيني برتقالي</h3>
+      <p>Modèle moderne, tissu résistant, idéal pour la plage.</p>
+      <p class="price">199 MAD</p>
+      <a class="buy-btn" href="https://wa.me/message/BB6WDM2C4TSEA1" target="_blank">Acheter sur WhatsApp</a>
+
+      <!-- Modal 1 -->
+      <div class="modal" id="modal1">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <img src="Burk or  2.JPG" alt="">
+          <img src="burk or 3.JPG" alt="">
+          <img src="bur or 5.JPG" alt="">
+          <img src="burk or 4.JPG" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 2 -->
+    <div class="product">
+      <img src="burk ve 1.JPG" alt="Bourkini 2" class="product-image" data-modal="modal2">
+      <h4>بوركيني اخضر</h4>
+      <p>Design floral doux, coupe confortable, tailles variées.</p>
+      <p class="price">199 MAD</p>
+      <a class="buy-btn" href="https://wa.me/message/BB6WDM2C4TSEA1" target="_blank">Acheter sur WhatsApp</a>
+
+      <!-- Modal 2 -->
+      <div class="modal" id="modal2">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <img src="bur ve 2.JPG" alt="">
+          <img src="bur ve 3.JPG" alt="">
+          <img src="burk ve 4.JPG" alt="">
+          <img src="burk ve 5.JPG" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 3 -->
+    <div class="product">
+      <img src="BURK ble 1.JPG" alt="Bourkini 3" class="product-image" data-modal="modal3">
+      <h5>بوركيني ازرق</h5>
+      <p>Style sobre et chic, parfait pour toutes les occasions.</p>
+      <p class="price">199 MAD</p>
+      <a class="buy-btn" href="https://wa.me/message/BB6WDM2C4TSEA1" target="_blank">Acheter sur WhatsApp</a>
+
+      <!-- Modal 3 -->
+      <div class="modal" id="modal3">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <img src="burk bl 2.JPG" alt="">
+          <img src="BURK bl 3.JPG" alt="">
+          <img src="burk ble 4.JPG" alt="">
+          <img src="burk ble 5.JPG" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Vidéo -->
+  <section style="background-color: #fff; padding: 2rem 1rem; text-align: center;">
+    <h2 style="color: #1e88e5; font-size: 24px; margin-bottom: 1rem;">📹 فيديو العرض الخاص بالبوركيني</h2>
+    
+    <video controls autoplay muted loop style="max-width: 90%; width: 500px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+      <source src="brk vid.mp4" type="video/mp4">
+      متصفحك لا يدعم عرض الفيديو.
+    </video>
+  </section>
+
+  <footer>
+    <p>© 2025 Boutique Bourkini. Tous droits réservés.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.querySelectorAll('.product-image').forEach(img => {
+      img.addEventListener('click', () => {
+        const modalId = img.getAttribute('data-modal');
+        document.getElementById(modalId).style.display = 'block';
+      });
+    });
+
+    document.querySelectorAll('.close').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.parentElement.style.display = 'none';
+      });
+    });
+
+    window.addEventListener('click', function(e) {
+      document.querySelectorAll('.modal').forEach(modal => {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
